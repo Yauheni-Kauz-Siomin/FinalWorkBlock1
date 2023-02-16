@@ -31,3 +31,15 @@ string[] SortWords(string[] array, int len)
     }
     return sortArray;
 }
+
+// Вывод массива на печать
+void PrintArray(string[] arr)
+{
+    Console.Write($"[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write((i + 1 != arr.Length ? $"{arr[i]}," : $"{arr[i]}"));
+    }
+    Console.Write("]");
+    Console.WriteLine();
+}
